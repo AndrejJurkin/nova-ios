@@ -13,7 +13,14 @@
 		0A4107DC1F82DE2400FB23FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4107DB1F82DE2400FB23FF /* Assets.xcassets */; };
 		0A4107DF1F82DE2400FB23FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4107DD1F82DE2400FB23FF /* LaunchScreen.storyboard */; };
 		0A4107EA1F82DE2400FB23FF /* NovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4107E91F82DE2400FB23FF /* NovaTests.swift */; };
-		2095407AE1535B5CBB9239A1 /* Pods_NovaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D9968BACFA46300517A2D3 /* Pods_NovaTests.framework */; };
+		770C67721F83A8BC00D3D104 /* CryptoCompareProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67711F83A8BC00D3D104 /* CryptoCompareProvider.swift */; };
+		770C67741F83A8D000D3D104 /* CoinMarketCapProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67731F83A8D000D3D104 /* CoinMarketCapProvider.swift */; };
+		770C67761F83A90000D3D104 /* CoinMarketCapTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67751F83A90000D3D104 /* CoinMarketCapTicker.swift */; };
+		770C67791F83A93500D3D104 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67781F83A93500D3D104 /* Extensions.swift */; };
+		770C677B1F83A97E00D3D104 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C677A1F83A97E00D3D104 /* Prefs.swift */; };
+		770C677D1F83A9BB00D3D104 /* Schedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C677C1F83A9BB00D3D104 /* Schedulers.swift */; };
+		770C677F1F83A9F200D3D104 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C677E1F83A9F200D3D104 /* Constants.swift */; };
+		770C67811F83AE2C00D3D104 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67801F83AE2C00D3D104 /* Injector.swift */; };
 		A9A70EDC37D1492542E4827B /* Pods_Nova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC709675BDE43A5B80D1939 /* Pods_Nova.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +46,14 @@
 		0A4107E91F82DE2400FB23FF /* NovaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaTests.swift; sourceTree = "<group>"; };
 		0A4107EB1F82DE2400FB23FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		686A957E7E250B78C3C9353F /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
-		69EB4202DAE4B5565C10065C /* Pods-NovaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovaTests/Pods-NovaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A14061708EAE9E896D54F9A2 /* Pods-NovaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovaTests/Pods-NovaTests.release.xcconfig"; sourceTree = "<group>"; };
+		770C67711F83A8BC00D3D104 /* CryptoCompareProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCompareProvider.swift; sourceTree = "<group>"; };
+		770C67731F83A8D000D3D104 /* CoinMarketCapProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinMarketCapProvider.swift; sourceTree = "<group>"; };
+		770C67751F83A90000D3D104 /* CoinMarketCapTicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinMarketCapTicker.swift; sourceTree = "<group>"; };
+		770C67781F83A93500D3D104 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		770C677A1F83A97E00D3D104 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		770C677C1F83A9BB00D3D104 /* Schedulers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedulers.swift; sourceTree = "<group>"; };
+		770C677E1F83A9F200D3D104 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		770C67801F83AE2C00D3D104 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		C8D9968BACFA46300517A2D3 /* Pods_NovaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9967415F973B10E930AD15B /* Pods-Nova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.release.xcconfig"; sourceTree = "<group>"; };
 		FFC709675BDE43A5B80D1939 /* Pods_Nova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2095407AE1535B5CBB9239A1 /* Pods_NovaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +83,6 @@
 			children = (
 				686A957E7E250B78C3C9353F /* Pods-Nova.debug.xcconfig */,
 				E9967415F973B10E930AD15B /* Pods-Nova.release.xcconfig */,
-				69EB4202DAE4B5565C10065C /* Pods-NovaTests.debug.xcconfig */,
-				A14061708EAE9E896D54F9A2 /* Pods-NovaTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -101,8 +111,14 @@
 			isa = PBXGroup;
 			children = (
 				0A4107D41F82DE2400FB23FF /* AppDelegate.swift */,
-				0A4107D61F82DE2400FB23FF /* ViewController.swift */,
-				0A4107D81F82DE2400FB23FF /* Main.storyboard */,
+				770C677E1F83A9F200D3D104 /* Constants.swift */,
+				770C67621F83968900D3D104 /* api */,
+				770C67671F8396C300D3D104 /* di */,
+				770C67641F83969B00D3D104 /* data */,
+				770C67631F83969100D3D104 /* model */,
+				770C67691F83973900D3D104 /* view */,
+				770C67681F83972F00D3D104 /* storyboard */,
+				770C67771F83A91C00D3D104 /* supporting files */,
 				0A4107DB1F82DE2400FB23FF /* Assets.xcassets */,
 				0A4107DD1F82DE2400FB23FF /* LaunchScreen.storyboard */,
 				0A4107E01F82DE2400FB23FF /* Info.plist */,
@@ -126,6 +142,96 @@
 				C8D9968BACFA46300517A2D3 /* Pods_NovaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		770C67621F83968900D3D104 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				770C676B1F83981C00D3D104 /* cryptocompare */,
+				770C676A1F83980D00D3D104 /* coinmarketcap */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		770C67631F83969100D3D104 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				770C67751F83A90000D3D104 /* CoinMarketCapTicker.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		770C67641F83969B00D3D104 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				770C67661F8396A300D3D104 /* local */,
+				770C67651F83969F00D3D104 /* remote */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		770C67651F83969F00D3D104 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = remote;
+			sourceTree = "<group>";
+		};
+		770C67661F8396A300D3D104 /* local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local;
+			sourceTree = "<group>";
+		};
+		770C67671F8396C300D3D104 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				770C67801F83AE2C00D3D104 /* Injector.swift */,
+			);
+			name = di;
+			sourceTree = "<group>";
+		};
+		770C67681F83972F00D3D104 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0A4107D81F82DE2400FB23FF /* Main.storyboard */,
+			);
+			name = storyboard;
+			sourceTree = "<group>";
+		};
+		770C67691F83973900D3D104 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0A4107D61F82DE2400FB23FF /* ViewController.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		770C676A1F83980D00D3D104 /* coinmarketcap */ = {
+			isa = PBXGroup;
+			children = (
+				770C67731F83A8D000D3D104 /* CoinMarketCapProvider.swift */,
+			);
+			name = coinmarketcap;
+			sourceTree = "<group>";
+		};
+		770C676B1F83981C00D3D104 /* cryptocompare */ = {
+			isa = PBXGroup;
+			children = (
+				770C67711F83A8BC00D3D104 /* CryptoCompareProvider.swift */,
+			);
+			name = cryptocompare;
+			sourceTree = "<group>";
+		};
+		770C67771F83A91C00D3D104 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				770C67781F83A93500D3D104 /* Extensions.swift */,
+				770C677A1F83A97E00D3D104 /* Prefs.swift */,
+				770C677C1F83A9BB00D3D104 /* Schedulers.swift */,
+			);
+			name = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,12 +261,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A4107F11F82DE2400FB23FF /* Build configuration list for PBXNativeTarget "NovaTests" */;
 			buildPhases = (
-				82F6BB86F69410A5E0051C6D /* [CP] Check Pods Manifest.lock */,
 				0A4107E11F82DE2400FB23FF /* Sources */,
 				0A4107E21F82DE2400FB23FF /* Frameworks */,
 				0A4107E31F82DE2400FB23FF /* Resources */,
-				C6C52BE9BCE2996C1713BF47 /* [CP] Embed Pods Frameworks */,
-				1AAD524F7AD43D3B04CF091A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,21 +338,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1AAD524F7AD43D3B04CF091A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovaTests/Pods-NovaTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6F16C8E290678B41F995ED94 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,21 +351,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nova/Pods-Nova-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82F6BB86F69410A5E0051C6D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B1621BF324141EDC2645D196 /* [CP] Copy Pods Resources */ = {
@@ -310,21 +383,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C6C52BE9BCE2996C1713BF47 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovaTests/Pods-NovaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -332,8 +390,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770C677B1F83A97E00D3D104 /* Prefs.swift in Sources */,
 				0A4107D71F82DE2400FB23FF /* ViewController.swift in Sources */,
+				770C67791F83A93500D3D104 /* Extensions.swift in Sources */,
+				770C67721F83A8BC00D3D104 /* CryptoCompareProvider.swift in Sources */,
+				770C67741F83A8D000D3D104 /* CoinMarketCapProvider.swift in Sources */,
+				770C67811F83AE2C00D3D104 /* Injector.swift in Sources */,
+				770C677D1F83A9BB00D3D104 /* Schedulers.swift in Sources */,
 				0A4107D51F82DE2400FB23FF /* AppDelegate.swift in Sources */,
+				770C67761F83A90000D3D104 /* CoinMarketCapTicker.swift in Sources */,
+				770C677F1F83A9F200D3D104 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +562,6 @@
 		};
 		0A4107F21F82DE2400FB23FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69EB4202DAE4B5565C10065C /* Pods-NovaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,7 +577,6 @@
 		};
 		0A4107F31F82DE2400FB23FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A14061708EAE9E896D54F9A2 /* Pods-NovaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +609,7 @@
 				0A4107F01F82DE2400FB23FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A4107F11F82DE2400FB23FF /* Build configuration list for PBXNativeTarget "NovaTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +618,7 @@
 				0A4107F31F82DE2400FB23FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
