@@ -90,11 +90,11 @@
 		0A4107C81F82DE2300FB23FF = {
 			isa = PBXGroup;
 			children = (
+				715310BF4BCDA105EFDB6F65 /* Frameworks */,
 				0A4107D31F82DE2400FB23FF /* Nova */,
 				0A4107E81F82DE2400FB23FF /* NovaTests */,
-				0A4107D21F82DE2400FB23FF /* Products */,
 				03DF3B912EED3E0C3E081514 /* Pods */,
-				715310BF4BCDA105EFDB6F65 /* Frameworks */,
+				0A4107D21F82DE2400FB23FF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,18 +110,18 @@
 		0A4107D31F82DE2400FB23FF /* Nova */ = {
 			isa = PBXGroup;
 			children = (
-				0A4107D41F82DE2400FB23FF /* AppDelegate.swift */,
-				770C677E1F83A9F200D3D104 /* Constants.swift */,
 				770C67621F83968900D3D104 /* api */,
-				770C67671F8396C300D3D104 /* di */,
 				770C67641F83969B00D3D104 /* data */,
+				770C67671F8396C300D3D104 /* di */,
 				770C67631F83969100D3D104 /* model */,
-				770C67691F83973900D3D104 /* view */,
 				770C67681F83972F00D3D104 /* storyboard */,
 				770C67771F83A91C00D3D104 /* supporting files */,
+				770C67691F83973900D3D104 /* view */,
+				0A4107D41F82DE2400FB23FF /* AppDelegate.swift */,
 				0A4107DB1F82DE2400FB23FF /* Assets.xcassets */,
-				0A4107DD1F82DE2400FB23FF /* LaunchScreen.storyboard */,
+				770C677E1F83A9F200D3D104 /* Constants.swift */,
 				0A4107E01F82DE2400FB23FF /* Info.plist */,
+				0A4107DD1F82DE2400FB23FF /* LaunchScreen.storyboard */,
 			);
 			path = Nova;
 			sourceTree = "<group>";
@@ -129,8 +129,8 @@
 		0A4107E81F82DE2400FB23FF /* NovaTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A4107E91F82DE2400FB23FF /* NovaTests.swift */,
 				0A4107EB1F82DE2400FB23FF /* Info.plist */,
+				0A4107E91F82DE2400FB23FF /* NovaTests.swift */,
 			);
 			path = NovaTests;
 			sourceTree = "<group>";
@@ -147,10 +147,11 @@
 		770C67621F83968900D3D104 /* api */ = {
 			isa = PBXGroup;
 			children = (
-				770C676B1F83981C00D3D104 /* cryptocompare */,
 				770C676A1F83980D00D3D104 /* coinmarketcap */,
+				770C676B1F83981C00D3D104 /* cryptocompare */,
 			);
 			name = api;
+			path = api;
 			sourceTree = "<group>";
 		};
 		770C67631F83969100D3D104 /* model */ = {
@@ -159,6 +160,7 @@
 				770C67751F83A90000D3D104 /* CoinMarketCapTicker.swift */,
 			);
 			name = model;
+			path = model;
 			sourceTree = "<group>";
 		};
 		770C67641F83969B00D3D104 /* data */ = {
@@ -168,6 +170,7 @@
 				770C67651F83969F00D3D104 /* remote */,
 			);
 			name = data;
+			path = data;
 			sourceTree = "<group>";
 		};
 		770C67651F83969F00D3D104 /* remote */ = {
@@ -175,6 +178,7 @@
 			children = (
 			);
 			name = remote;
+			path = remote;
 			sourceTree = "<group>";
 		};
 		770C67661F8396A300D3D104 /* local */ = {
@@ -182,6 +186,7 @@
 			children = (
 			);
 			name = local;
+			path = local;
 			sourceTree = "<group>";
 		};
 		770C67671F8396C300D3D104 /* di */ = {
@@ -190,6 +195,7 @@
 				770C67801F83AE2C00D3D104 /* Injector.swift */,
 			);
 			name = di;
+			path = di;
 			sourceTree = "<group>";
 		};
 		770C67681F83972F00D3D104 /* storyboard */ = {
@@ -198,6 +204,7 @@
 				0A4107D81F82DE2400FB23FF /* Main.storyboard */,
 			);
 			name = storyboard;
+			path = storyboard;
 			sourceTree = "<group>";
 		};
 		770C67691F83973900D3D104 /* view */ = {
@@ -206,6 +213,7 @@
 				0A4107D61F82DE2400FB23FF /* ViewController.swift */,
 			);
 			name = view;
+			path = view;
 			sourceTree = "<group>";
 		};
 		770C676A1F83980D00D3D104 /* coinmarketcap */ = {
@@ -214,6 +222,7 @@
 				770C67731F83A8D000D3D104 /* CoinMarketCapProvider.swift */,
 			);
 			name = coinmarketcap;
+			path = coinmarketcap;
 			sourceTree = "<group>";
 		};
 		770C676B1F83981C00D3D104 /* cryptocompare */ = {
@@ -222,6 +231,7 @@
 				770C67711F83A8BC00D3D104 /* CryptoCompareProvider.swift */,
 			);
 			name = cryptocompare;
+			path = cryptocompare;
 			sourceTree = "<group>";
 		};
 		770C67771F83A91C00D3D104 /* supporting files */ = {
@@ -232,6 +242,7 @@
 				770C677C1F83A9BB00D3D104 /* Schedulers.swift */,
 			);
 			name = "supporting files";
+			path = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,6 +439,7 @@
 				0A4107D91F82DE2400FB23FF /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		0A4107DD1F82DE2400FB23FF /* LaunchScreen.storyboard */ = {
@@ -436,6 +448,7 @@
 				0A4107DE1F82DE2400FB23FF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
