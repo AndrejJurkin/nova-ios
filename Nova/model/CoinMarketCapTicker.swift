@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 //
-//  Ticker.swift
+//  CoinMarketCapTicker.swift
 //  Nova
 //
 //  Created by Andrej Jurkin on 9/3/17.
@@ -22,7 +22,6 @@
 
 import Foundation
 import EVReflection
-import RealmSwift
 
 class CoinMarketCapTicker: RealmObject {
     

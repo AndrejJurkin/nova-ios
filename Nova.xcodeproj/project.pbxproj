@@ -13,6 +13,8 @@
 		0A4107DC1F82DE2400FB23FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4107DB1F82DE2400FB23FF /* Assets.xcassets */; };
 		0A4107DF1F82DE2400FB23FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4107DD1F82DE2400FB23FF /* LaunchScreen.storyboard */; };
 		0A4107EA1F82DE2400FB23FF /* NovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4107E91F82DE2400FB23FF /* NovaTests.swift */; };
+		0A9132E81F8AAEB400EE7867 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9132E71F8AAEB400EE7867 /* MarketViewController.swift */; };
+		0A9132EB1F8AAED800EE7867 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9132EA1F8AAED800EE7867 /* BaseViewController.swift */; };
 		770C67721F83A8BC00D3D104 /* CryptoCompareProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67711F83A8BC00D3D104 /* CryptoCompareProvider.swift */; };
 		770C67741F83A8D000D3D104 /* CoinMarketCapProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67731F83A8D000D3D104 /* CoinMarketCapProvider.swift */; };
 		770C67761F83A90000D3D104 /* CoinMarketCapTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67751F83A90000D3D104 /* CoinMarketCapTicker.swift */; };
@@ -45,6 +47,8 @@
 		0A4107E51F82DE2400FB23FF /* NovaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4107E91F82DE2400FB23FF /* NovaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaTests.swift; sourceTree = "<group>"; };
 		0A4107EB1F82DE2400FB23FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9132E71F8AAEB400EE7867 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		0A9132EA1F8AAED800EE7867 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		686A957E7E250B78C3C9353F /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
 		770C67711F83A8BC00D3D104 /* CryptoCompareProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCompareProvider.swift; sourceTree = "<group>"; };
 		770C67731F83A8D000D3D104 /* CoinMarketCapProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinMarketCapProvider.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				770C67621F83968900D3D104 /* api */,
+				0A9132E91F8AAECA00EE7867 /* base */,
 				770C67641F83969B00D3D104 /* data */,
 				770C67671F8396C300D3D104 /* di */,
 				770C67631F83969100D3D104 /* model */,
@@ -135,6 +140,22 @@
 			path = NovaTests;
 			sourceTree = "<group>";
 		};
+		0A9132E61F8AAE7100EE7867 /* market */ = {
+			isa = PBXGroup;
+			children = (
+				0A9132E71F8AAEB400EE7867 /* MarketViewController.swift */,
+			);
+			path = market;
+			sourceTree = "<group>";
+		};
+		0A9132E91F8AAECA00EE7867 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				0A9132EA1F8AAED800EE7867 /* BaseViewController.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		715310BF4BCDA105EFDB6F65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +171,6 @@
 				770C676A1F83980D00D3D104 /* coinmarketcap */,
 				770C676B1F83981C00D3D104 /* cryptocompare */,
 			);
-			name = api;
 			path = api;
 			sourceTree = "<group>";
 		};
@@ -159,7 +179,6 @@
 			children = (
 				770C67751F83A90000D3D104 /* CoinMarketCapTicker.swift */,
 			);
-			name = model;
 			path = model;
 			sourceTree = "<group>";
 		};
@@ -169,7 +188,6 @@
 				770C67661F8396A300D3D104 /* local */,
 				770C67651F83969F00D3D104 /* remote */,
 			);
-			name = data;
 			path = data;
 			sourceTree = "<group>";
 		};
@@ -177,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = remote;
 			path = remote;
 			sourceTree = "<group>";
 		};
@@ -185,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = local;
 			path = local;
 			sourceTree = "<group>";
 		};
@@ -194,7 +210,6 @@
 			children = (
 				770C67801F83AE2C00D3D104 /* Injector.swift */,
 			);
-			name = di;
 			path = di;
 			sourceTree = "<group>";
 		};
@@ -203,16 +218,15 @@
 			children = (
 				0A4107D81F82DE2400FB23FF /* Main.storyboard */,
 			);
-			name = storyboard;
 			path = storyboard;
 			sourceTree = "<group>";
 		};
 		770C67691F83973900D3D104 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				0A9132E61F8AAE7100EE7867 /* market */,
 				0A4107D61F82DE2400FB23FF /* ViewController.swift */,
 			);
-			name = view;
 			path = view;
 			sourceTree = "<group>";
 		};
@@ -221,7 +235,6 @@
 			children = (
 				770C67731F83A8D000D3D104 /* CoinMarketCapProvider.swift */,
 			);
-			name = coinmarketcap;
 			path = coinmarketcap;
 			sourceTree = "<group>";
 		};
@@ -230,7 +243,6 @@
 			children = (
 				770C67711F83A8BC00D3D104 /* CryptoCompareProvider.swift */,
 			);
-			name = cryptocompare;
 			path = cryptocompare;
 			sourceTree = "<group>";
 		};
@@ -241,7 +253,6 @@
 				770C677A1F83A97E00D3D104 /* Prefs.swift */,
 				770C677C1F83A9BB00D3D104 /* Schedulers.swift */,
 			);
-			name = "supporting files";
 			path = "supporting files";
 			sourceTree = "<group>";
 		};
@@ -355,9 +366,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nova/Pods-Nova-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,13 +437,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nova-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -406,8 +461,10 @@
 				770C67791F83A93500D3D104 /* Extensions.swift in Sources */,
 				770C67721F83A8BC00D3D104 /* CryptoCompareProvider.swift in Sources */,
 				770C67741F83A8D000D3D104 /* CoinMarketCapProvider.swift in Sources */,
+				0A9132EB1F8AAED800EE7867 /* BaseViewController.swift in Sources */,
 				770C67811F83AE2C00D3D104 /* Injector.swift in Sources */,
 				770C677D1F83A9BB00D3D104 /* Schedulers.swift in Sources */,
+				0A9132E81F8AAEB400EE7867 /* MarketViewController.swift in Sources */,
 				0A4107D51F82DE2400FB23FF /* AppDelegate.swift in Sources */,
 				770C67761F83A90000D3D104 /* CoinMarketCapTicker.swift in Sources */,
 				770C677F1F83A9F200D3D104 /* Constants.swift in Sources */,
