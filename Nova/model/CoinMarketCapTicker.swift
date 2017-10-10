@@ -21,43 +21,45 @@
 //
 
 import Foundation
-import EVReflection
+import ObjectMapper
 
-class CoinMarketCapTicker: RealmObject {
+class CoinMarketCapTicker: RealmObject, Mappable {
     
     // Realm primary key
     dynamic var symbol: String = ""
-    
     dynamic var id: String = ""
     dynamic var name: String = ""
-    dynamic var rank: Int = 0
-    dynamic var priceUsd: Double = 0
-    dynamic var priceBtc: Double = 0
-    dynamic var dailyVolume: Double = 0
-    dynamic var marketCapUsd: Double = 0
-    dynamic var availableSupply: Double = 0
-    dynamic var totalSupply: Double = 0
-    dynamic var changeLastHour: Float = 0
-    dynamic var changeLastDay: Float = 0
-    dynamic var changeLastWeek: Float = 0
-    dynamic var lastUpdated: Double = 0
-    
     dynamic var isPinned = false
+    dynamic var price: Double = 0
+    dynamic var priceBtc: Double = 0
+    dynamic var rank: Int = 0
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        self.symbol <- map["symbol"]
+        self.id <- map["id"]
+        self.name <- map["name"]
+        
+        var priceUsdStr: String = ""
+        var priceBtcStr: String = ""
+        var rankStr: String = ""
+        
+        let targetCurrency = Prefs.shared.targetCurrency.lowercased()
+        
+        priceUsdStr <- map["price_\(targetCurrency)"]
+        priceBtcStr <- map["price_btc"]
+        rankStr <- map["rank"]
+        
+        self.price = Double(priceUsdStr) ?? 0
+        self.priceBtc = Double(priceBtcStr) ?? 0
+        self.rank = Int(rankStr) ?? 0
+    }
     
     override static func primaryKey() -> String? {
         return "symbol"
-    }
-    
-    func propertyMapping() -> [(keyInObject: String?, keyInResource: String?)] {
-        return [
-            (keyInObject: "dailyVolume", keyInResource: "24h_volume_usd"),
-            (keyInObject: "changeLastHour", keyInResource: "percent_change_1h"),
-            (keyInObject: "changeLastDay", keyInResource: "percent_change_24h"),
-            (keyInObject: "changeLastWeek", keyInResource: "percent_change_7d"),
-            
-            // Ignored
-            (keyInObject: "isPinned", keyInResource: nil)
-        ]
     }
     
     /// Update Realm with dictionary to prevent from overwriting ignored properties
@@ -66,17 +68,9 @@ class CoinMarketCapTicker: RealmObject {
             "id": id,
             "symbol": symbol,
             "name": name,
-            "rank": rank,
-            "priceUsd": priceUsd,
+            "price": price,
             "priceBtc": priceBtc,
-            "dailyVolume": dailyVolume,
-            "marketCapUsd": marketCapUsd,
-            "availableSupply": availableSupply,
-            "totalSupply": totalSupply,
-            "changeLastHour": changeLastHour,
-            "changeLastDay": changeLastDay,
-            "changeLastWeek": changeLastWeek,
-            "lastUpdated": lastUpdated,
+            "rank": rank,
         ]
     }
 }

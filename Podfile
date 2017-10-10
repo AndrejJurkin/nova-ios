@@ -19,9 +19,8 @@ target 'Nova' do
   pod 'RealmSwift'
   pod 'Swinject'
   pod 'SwinjectAutoregistration'
-  pod 'EVReflection'
-  pod 'EVReflection/MoyaRxSwift'
-  pod 'EVReflection/Realm'
+  pod 'Moya-ObjectMapper', '~> 2.3.2'
+  pod 'Moya-ObjectMapper/RxSwift', '~> 2.3.2'
   pod 'Hero'
   pod 'NVActivityIndicatorView'
 
