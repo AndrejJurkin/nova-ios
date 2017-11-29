@@ -23,6 +23,7 @@
 		770C677D1F83A9BB00D3D104 /* Schedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C677C1F83A9BB00D3D104 /* Schedulers.swift */; };
 		770C677F1F83A9F200D3D104 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C677E1F83A9F200D3D104 /* Constants.swift */; };
 		770C67811F83AE2C00D3D104 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770C67801F83AE2C00D3D104 /* Injector.swift */; };
+		775DCB3E1FAB207A00D8AFF5 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DCB3D1FAB207A00D8AFF5 /* MarketViewModel.swift */; };
 		A9A70EDC37D1492542E4827B /* Pods_Nova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC709675BDE43A5B80D1939 /* Pods_Nova.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +57,9 @@
 		770C67781F83A93500D3D104 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		770C677A1F83A97E00D3D104 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 		770C677C1F83A9BB00D3D104 /* Schedulers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedulers.swift; sourceTree = "<group>"; };
-		770C677E1F83A9F200D3D104 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		770C677E1F83A9F200D3D104 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		770C67801F83AE2C00D3D104 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		775DCB3D1FAB207A00D8AFF5 /* MarketViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
 		C8D9968BACFA46300517A2D3 /* Pods_NovaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9967415F973B10E930AD15B /* Pods-Nova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.release.xcconfig"; sourceTree = "<group>"; };
 		FFC709675BDE43A5B80D1939 /* Pods_Nova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +126,6 @@
 				770C67691F83973900D3D104 /* view */,
 				0A4107D41F82DE2400FB23FF /* AppDelegate.swift */,
 				0A4107DB1F82DE2400FB23FF /* Assets.xcassets */,
-				770C677E1F83A9F200D3D104 /* Constants.swift */,
 				0A4107E01F82DE2400FB23FF /* Info.plist */,
 				0A4107DD1F82DE2400FB23FF /* LaunchScreen.storyboard */,
 			);
@@ -140,11 +141,13 @@
 			path = NovaTests;
 			sourceTree = "<group>";
 		};
-		0A9132E61F8AAE7100EE7867 /* market */ = {
+		0A9132E61F8AAE7100EE7867 /* home */ = {
 			isa = PBXGroup;
 			children = (
 				0A9132E71F8AAEB400EE7867 /* MarketViewController.swift */,
+				775DCB3D1FAB207A00D8AFF5 /* MarketViewModel.swift */,
 			);
+			name = home;
 			path = market;
 			sourceTree = "<group>";
 		};
@@ -185,24 +188,8 @@
 		770C67641F83969B00D3D104 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				770C67661F8396A300D3D104 /* local */,
-				770C67651F83969F00D3D104 /* remote */,
 			);
 			path = data;
-			sourceTree = "<group>";
-		};
-		770C67651F83969F00D3D104 /* remote */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = remote;
-			sourceTree = "<group>";
-		};
-		770C67661F8396A300D3D104 /* local */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = local;
 			sourceTree = "<group>";
 		};
 		770C67671F8396C300D3D104 /* di */ = {
@@ -224,7 +211,7 @@
 		770C67691F83973900D3D104 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				0A9132E61F8AAE7100EE7867 /* market */,
+				0A9132E61F8AAE7100EE7867 /* home */,
 				0A4107D61F82DE2400FB23FF /* ViewController.swift */,
 			);
 			path = view;
@@ -249,6 +236,7 @@
 		770C67771F83A91C00D3D104 /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				770C677E1F83A9F200D3D104 /* Constants.swift */,
 				770C67781F83A93500D3D104 /* Extensions.swift */,
 				770C677A1F83A97E00D3D104 /* Prefs.swift */,
 				770C677C1F83A9BB00D3D104 /* Schedulers.swift */,
@@ -463,6 +451,7 @@
 				770C67791F83A93500D3D104 /* Extensions.swift in Sources */,
 				770C67721F83A8BC00D3D104 /* CryptoCompareProvider.swift in Sources */,
 				770C67741F83A8D000D3D104 /* CoinMarketCapProvider.swift in Sources */,
+				775DCB3E1FAB207A00D8AFF5 /* MarketViewModel.swift in Sources */,
 				0A9132EB1F8AAED800EE7867 /* BaseViewController.swift in Sources */,
 				770C67811F83AE2C00D3D104 /* Injector.swift in Sources */,
 				770C677D1F83A9BB00D3D104 /* Schedulers.swift in Sources */,

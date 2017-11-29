@@ -23,12 +23,17 @@
 import Foundation
 import Moya
 
+/// Moya provider that provides access to the CoinMarketCap public API
 enum CoinMarketCapProvider {
     
-    case allTickers
+    /// Get all available cryptocurrencies, sorted by market cap
+    /// Convert prices to the target currency
+    case allTickers(targetCurrency: String)
     
+    /// Get top N cryptucurrencies, sorted by market cap
     case topTickers(limit: Int)
     
+    /// Get ticker with name
     case ticker(currencyName: String)
 }
 

@@ -22,6 +22,7 @@
 
 import UIKit
 
+/// Market view controller displays cryptocurrency overview (prices, market cap...)
 class MarketViewController: BaseViewController {
     
     override func viewDidLoad() {

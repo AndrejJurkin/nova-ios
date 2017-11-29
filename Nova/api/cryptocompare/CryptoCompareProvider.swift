@@ -23,6 +23,7 @@
 import Foundation
 import Moya
 
+/// Moya provider that provides the access to the CryptoCompare public API
 enum CryptoCompareProvider {
     
     case priceMulti(fromSymbols: [String], toSymbols: [String])
